@@ -1,0 +1,19 @@
+
+header{
+    background-image: url('../images/backgroundImage.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.select-player-section{
+    min-height: 300px;
+}
+button{
+    width: 80%;
+    margin: 0 auto;
+}
+.btn-calculate{
+    width: 100%;
+}
