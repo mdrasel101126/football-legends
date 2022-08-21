@@ -19,6 +19,7 @@
         <section class="container mt-5">
             <div class="row">
                 <div class="col-9">
+                    <!-- player section  -->
                     <div class="row row-cols-3 g-4">
                         <div class="col">
                             <div class="card  bg-black">
@@ -121,7 +122,7 @@
                                 <img height="300px"  src="images/Ronaldinho.jpg" class="card-img-top" alt="...">
                                 <div class="card-body">
                                   <div class="text-center">
-                                    <h4 id="player-name-8" class="text-white">Ronaldinho</h4>
+                                    <h4 id="player-name-9" class="text-white">Ronaldinho</h4>
                                     <p class="text-white-50">36 Goals &nbsp; &nbsp;. &nbsp; &nbsp;  120 Assist</p>
                                     <button id="select-player-9" type="button" class="btn btn-primary">SELECT</button>
                                   </div>
@@ -135,31 +136,23 @@
                         <div class="col bg-black text-white py-5 select-player-section">
                             <h3 class="text-center">Selected - V</h3>
                             <ul>
-                                <ol class="py-3">
+                                <ol id="player-list" class="py-3">
                                     
                                 </ol>
                             </ul>
                         </div>
+                        <!-- Calculation section  -->
                         <div class="col bg-black text-white py-5">
                             <div>
                                 <h3 class="text-center">Budget</h3>
-                                <p class="mt-4">PerPlayer :  <input class="bg-black text-white border-white px-3" type="text" name="" id=""></p>
-                                <button type="button" class="btn btn-primary btn-calculate mt-3">Calculate</button>
-                                <h4 class="mt-2">Player Expenses: $<span></span></h4>
-                                <p class="mt-4">Manager :  <input class="bg-black text-white border-white px-3" type="text" name="" id=""></p>
-                                <p class="mt-4">Coach :  <input class="bg-black text-white border-white px-3" type="text" name="" id=""></p>
-                                <button type="button" class="btn btn-primary btn-calculate mt-3">Calculate Total</button>
-                                <h4>Total : $<span></span></h4>
+                                <p class="mt-4">PerPlayer :  <input class="bg-black text-white border-white px-3" type="text" name="" id="input-per-player"></p>
+                                <button id="btn-calculate" type="button" class="btn btn-primary btn-calculate mt-3">Calculate</button>
+                                <h6 class="mt-4">Player Expenses: $<span id="player-expenses"></span></h6>
+                                <p class="mt-4">Manager :  <input class="bg-black text-white border-white px-3" type="text" name="" id="input-manager"></p>
+                                <p class="mt-4">Coach :  <input class="bg-black text-white border-white px-3" type="text" name="" id="input-coach"></p>
+                                <button id="btn-total" type="button" class="btn btn-primary btn-calculate mt-3">Calculate Total</button>
+                                <h4>Total : $<span id="total"></span></h4>
                             </div>
-
-                            <!-- <div class="d-flex justify-content-between">
-                                <p class="mt-4">PerPlayer:</p>
-                                <input class="bg-black text-white border-white px-2 py-0" type="text" name="" id="">
-                            </div>
-                            
-                            
-                            <h4 class="mt-2">Player Expense: $ <span></span></h4> -->
-                            
                         </div>
                     </div>
                 </div>
