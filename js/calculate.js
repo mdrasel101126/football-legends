@@ -33,21 +33,25 @@ document.getElementById("btn-calculate").addEventListener("click", function () {
 document.getElementById("btn-total").addEventListener("click", function () {
   const playerNumber = getPlayerNumber();
   if (playerNumber === 0) {
+    setInnerTextEmpty("total");
     alert("Please select at least one player!!");
     return;
   }
   const perPlayerExpenses = getInputValue("input-per-player");
   if (isNaN(perPlayerExpenses) || perPlayerExpenses < 0) {
+    setInnerTextEmpty("total");
     alert("Please insert valid input!!");
     return;
   }
   const managerCost = getInputValue("input-manager");
   if (isNaN(managerCost) || managerCost < 0) {
+    setInnerTextEmpty("total");
     alert("Please insert valid input!!");
     return;
   }
   const coachCost = getInputValue("input-coach");
   if (isNaN(coachCost) || coachCost < 0) {
+    setInnerTextEmpty("total");
     alert("Please insert valid input!!");
     return;
   }
